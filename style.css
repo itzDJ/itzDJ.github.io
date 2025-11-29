@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #00ff41;
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: left;
+    padding: 40px;
+    max-width: 600px;
+}
+
+main {
+    text-align: left;
+    padding: 40px;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 3.5em;
+    letter-spacing: 10px;
+    text-shadow: 0 0 20px #00ff41;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1.8em;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+.tagline {
+    font-size: 1.1em;
+    margin: 8px 0;
+    opacity: 0.7;
+}
+
+.links {
+    margin-bottom: 60px;
+}
+
+.links a {
+    color: #00ff41;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin: 0 20px;
+    transition: all 0.3s ease;
+}
+
+.links a:hover {
+    text-shadow: 0 0 10px #00ff41;
+}
+
+.cert-grid {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.cert-grid a {
+    display: block;
+    transition: all 0.3s ease;
+    opacity: 0.85;
+}
+
+.cert-grid a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px #00ff41);
+}
+
+.cert-grid img {
+    height: 70px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: block;
+    transition: all 0.3s ease;
+    opacity: 0.85;
+}
+
+nav a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px #00ff41);
+}
+
+nav img {
+    height: 70px;
+    width: auto;
+}
+
+.badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.badges a {
+    display: inline-block;
+    transition: all 0.3s ease;
+    opacity: 0.85;
+}
+
+.badges a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px #00ff41);
+}
+
+.badges img {
+    height: 90px;
+    width: 90px;
+    object-fit: contain;
+}
+
+.cert-grid a:nth-child(3) img {
+    mix-blend-mode: screen;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 255, 65, 0.03),
+        rgba(0, 255, 65, 0.03) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    pointer-events: none;
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2em;
+        letter-spacing: 6px;
+    }
+
+    .links {
+        margin-bottom: 40px;
+    }
+
+    .links a {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .cert-grid img {
+        height: 60px;
+    }
+
+    nav img {
+        height: 60px;
+    }
+
+    .badges img {
+        height: 60px;
+    }
+}
